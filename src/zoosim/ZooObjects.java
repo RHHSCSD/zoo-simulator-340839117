@@ -12,10 +12,17 @@ public class ZooObjects implements IObject{
     private int degrees = 0;
     private int xPos;
     private int yPos;
+    private int xWidth;
+    private int yWidth;
+    private String type;
+    private String[] objectTypes = new String[]{"Tree","Rock","Food","Grass"};
     
-    public ZooObjects(int xPos, int yPos){
+    public ZooObjects(int xPos, int yPos, int xWidth, int yWidth, String type){
         this.xPos = xPos;
         this.yPos = yPos;
+        this.xWidth = xWidth;
+        this.yWidth = yWidth;
+        this.type = type;
     }
     
     @Override

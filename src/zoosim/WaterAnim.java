@@ -14,14 +14,16 @@ public class WaterAnim extends Animal implements ISwimmable{
     
     @Override
     public boolean canSurface() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return canBreathe;
     }
-    public WaterAnim(String name, String species, char sex, int speed, int age, Image image, int height) {
+    public WaterAnim(String name, String species, char sex, int speed, int age, Image image, int height, boolean canBreathe) {
         super(name, species, sex, speed, age, image, WATER_SOUND);
         this.height = height;
+        this.canBreathe = canBreathe;
     }
-    public WaterAnim(String name, String species, char sex, Image image,int xPos, int yPos, int height) {
+    public WaterAnim(String name, String species, char sex, Image image,int xPos, int yPos, int height, boolean canBreathe) {
         super(name, species, sex, image, WATER_SOUND, xPos, yPos);
         this.height = height;
+        this.canBreathe = canBreathe;
     }
 }

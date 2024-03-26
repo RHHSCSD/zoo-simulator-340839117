@@ -35,7 +35,7 @@ public class Animal implements IEntity{
         
         this.age = age;
         
-        if (speed>maxSpeed && speed<minSpeed){
+        if (speed<maxSpeed && speed>minSpeed){
             this.speed = speed;
         }else{
             this.speed = 5;
@@ -98,5 +98,22 @@ public class Animal implements IEntity{
         yPos = y;
     }
     
-    
+    public int getHunger(){
+        return hunger;
+    }
+    public int getFatigue(){
+        return fatigue;
+    }
+    public String getSpecies(){
+        return species;
+    }
+    public char getSex(){
+        return sex;
+    }
+    public int getSpeed(){
+        return speed;
+    }
+    public int getAge(){
+        return age;
+    }
 }

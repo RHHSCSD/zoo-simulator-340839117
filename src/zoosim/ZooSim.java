@@ -28,7 +28,6 @@ public class ZooSim {
         double rand;
         
        for (int i=0;i<zooAnims.length;i++){
-           String name = names[i];
            if (Math.random()<0.5){
                sex = 'M';
            }else{
@@ -62,8 +61,7 @@ public class ZooSim {
        }
        image = new Image(5,5);
        zooAnims = addAnimal(zooAnims, "jaden", 'M', 15, 18, image, -5, true);
-       System.out.println(getStats(zooAnims));
-        
+       System.out.println(getStats(zooAnims));        
     
     }
     public static Animal[] addAnimal(Animal[] zooAnims, String name, char sex, int speed, int age, Image image, int height, boolean canBreathe){
