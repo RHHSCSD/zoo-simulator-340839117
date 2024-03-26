@@ -11,17 +11,15 @@ package zoosim;
 public class BirdAnim extends Animal implements IFlyable{
     private boolean canFly;
     private static final String BIRD_SOUND = "Tweet Tweet";
-    private int height;
+    private int height = 0;
     
     public BirdAnim(String name, String species, char sex, int speed, int age, Image image, boolean canFly) {
         super(name, species, sex, speed, age, image, BIRD_SOUND);
         this.canFly = canFly;
-        height = 0;
     }
     public BirdAnim(String name, String species, char sex, Image image,int xPos, int yPos, boolean canFly) {
         super(name, species, sex, image, BIRD_SOUND, xPos, yPos);
         this.canFly = canFly;
-        height = 0;
     }
     
     @Override

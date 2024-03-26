@@ -18,7 +18,6 @@ public class ZooSim {
         Animal[] zooAnims = new Animal[10];
         String[] names = new String[]{"Scooby","Shaggy","Daphne","Velma","Fred","Splinter","Donatello","Michelangelo","Raphael","Leonardo"};
         
-        
         char sex;
         boolean randBool;
         int speed;
