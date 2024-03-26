@@ -15,7 +15,6 @@ public class ZooObjects implements IObject{
     private int xWidth;
     private int yWidth;
     private String type;
-    private String[] objectTypes = new String[]{"Tree","Rock","Food","Grass"};
     
     public ZooObjects(int xPos, int yPos, int xWidth, int yWidth, String type){
         this.xPos = xPos;

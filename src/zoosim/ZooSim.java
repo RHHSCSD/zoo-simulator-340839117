@@ -59,10 +59,6 @@ public class ZooSim {
                zooAnims[i] = new LandAnim(names[i], species, sex, speed, age, image, "ROAR");
            }    
        }
-       image = new Image(5,5);
-       zooAnims = addAnimal(zooAnims, "jaden", 'M', 15, 18, image, -5, true);
-       System.out.println(getStats(zooAnims));        
-    
     }
     public static Animal[] addAnimal(Animal[] zooAnims, String name, char sex, int speed, int age, Image image, int height, boolean canBreathe){
         zooAnims = Arrays.copyOf(zooAnims, zooAnims.length+1);
