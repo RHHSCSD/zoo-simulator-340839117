@@ -8,20 +8,24 @@ import java.util.*;
 
 /**
  * THINKING QUESTIONS:
- * 
- *  Sub-classes of the waterAnim, landAnim, and birdAnim could be created in which each animal is classed 
- *  in the predator or prey category. Since you would have many prey and many predator classes, an interface 
- *  for predator and one for prey could be created and all the appropriate subclasses could implement it. 
- *  The predator class could include methods such as hunt() which could cause the predator to search for and 
- *  attack a prey animal. Prey could have a counter method such as evade() where they hide from the predator. 
- *  Perhaps each predator could have an aggression field to control how often it attacks prey. Similarly, 
- *  prey could have an awareness variable that if high enough allows them to evade capture from the predator.
- *  To implement diet types, a simple field within the animal class could specify the animal’s diet (Carnivore, 
- *  Omnivore or Herbivore). Then, types of food (meat, veggie, grain, etc.) could be implemented and the animal 
- *  would require different food based on diet. If a predator-type animal kills a prey-type animal (or any 
- *  animal kills any animal) the animal could be replaced with a meat-type food so that the predator can then 
- *  consume the prey.
- * 
+ *
+ * Sub-classes of the waterAnim, landAnim, and birdAnim could be created in
+ * which each animal is classed in the predator or prey category. Since you
+ * would have many prey and many predator classes, an interface for predator and
+ * one for prey could be created and all the appropriate subclasses could
+ * implement it. The predator class could include methods such as hunt() which
+ * could cause the predator to search for and attack a prey animal. Prey could
+ * have a counter method such as evade() where they hide from the predator.
+ * Perhaps each predator could have an aggression field to control how often it
+ * attacks prey. Similarly, prey could have an awareness variable that if high
+ * enough allows them to evade capture from the predator. To implement diet
+ * types, a simple field within the animal class could specify the animal’s diet
+ * (Carnivore, Omnivore or Herbivore). Then, types of food (meat, veggie, grain,
+ * etc.) could be implemented and the animal would require different food based
+ * on diet. If a predator-type animal kills a prey-type animal (or any animal
+ * kills any animal) the animal could be replaced with a meat-type food so that
+ * the predator can then consume the prey.
+ *
  * @author Jaden Wickens
  */
 public class ZooSim {
