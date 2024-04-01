@@ -5,21 +5,41 @@
 package zoosim;
 
 /**
+ * Represents the visual representations (images) shown of the zoo objects
  *
- * @author menot
+ * @author Jaden Wickens
  */
 public class Image {
+
     private int width;
     private int height;
-    
-    public Image(int w, int h){
+
+    /**
+     * Constructs an instance of the Image class with specified parameters
+     *
+     * @param w the width of the image
+     * @param h the height of the image
+     */
+    public Image(int w, int h) {
         width = w;
         height = h;
     }
-    public int getWidth(){
+
+    /**
+     * Gets the width of the image
+     *
+     * @return the width of the image as an int
+     */
+    public int getWidth() {
         return width;
     }
-    public int getHeight(){
+
+    /**
+     * Gets the height of the image
+     *
+     * @return the height of the image as an int
+     */
+    public int getHeight() {
         return height;
     }
 }

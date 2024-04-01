@@ -5,11 +5,26 @@
 package zoosim;
 
 /**
+ * Represents objects that can fly
  *
- * @author menot
+ * @author Jaden Wickens
  */
 public interface IFlyable {
+
+    /**
+     * Instructs the object to fly.
+     */
     public void fly();
+
+    /**
+     * Instructs the object to land.
+     */
     public void land();
-    public void isFlying();
+
+    /**
+     * Checks if the object is currently flying.
+     *
+     * @return true if the object is flying, false otherwise
+     */
+    public boolean isFlying();
 }

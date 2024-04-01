@@ -5,12 +5,30 @@
 package zoosim;
 
 /**
+ * The IEntity interface represents entities in the system, extending the
+ * IObject interface. It defines common behaviors for entities.
  *
- * @author menot
+ * @author Jaden Wickens
  */
-public interface IEntity extends IObject{
+public interface IEntity extends IObject {
+
+    /**
+     * Moves the entity.
+     */
     public void move();
+
+    /**
+     * Makes a sound associated with the entity.
+     */
     public void makeSound();
+
+    /**
+     * Simulates the entity eating.
+     */
     public void eat();
+
+    /**
+     * Simulates the entity sleeping.
+     */
     public void sleep();
 }
